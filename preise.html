@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Preise &amp; Buchen · Ferienwohnung Lenk</title>
+<meta name="description" content="CHF 75.– pro Nacht, CHF 500.– pro Woche. Kosten berechnen und Verfügbarkeit anfragen.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><path d='M4 56 24 20l10 16 8-12 18 32Z' fill='%232f5d3a'/><path d='m24 20 6 10-6-2-6 4Z' fill='%23fff'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body data-page="preise">
+
+<header class="banner">
+  <img src="assets/img/haus.jpg" alt="Fassade des Hauses" style="object-position:50% 45%">
+  <div class="wrap">
+    <div class="eyebrow">Angebot</div>
+    <h1>Preise &amp; Buchen</h1>
+    <p>Einfach und fair. Die Endreinigung macht ihr selbst, dafür gibt es keine Zusatzkosten.</p>
+  </div>
+</header>
+
+<main>
+<section>
+  <div class="wrap">
+    <div class="price-grid">
+      <div class="price-card reveal">
+        <h3>Mietpreis</h3>
+        <div class="price-big">
+          <div><b>CHF 75.–</b><span>pro Nacht</span></div>
+          <div><b>CHF 500.–</b><span>pro 7 Nächte</span></div>
+        </div>
+        <table class="tbl">
+          <tr><td>Kurtaxe Erwachsene</td><td>CHF 6.– / Nacht*</td></tr>
+          <tr><td>Kurtaxe Kinder</td><td>CHF 2.50 / Nacht</td></tr>
+          <tr><td>Endreinigung</td><td>selbst, keine Kosten</td></tr>
+          <tr><td>Holz zum Kochen</td><td>inklusive</td></tr>
+        </table>
+        <p class="small">* inkl. CHF 1.– kantonale Beherbergungsabgabe</p>
+        <div class="note"><b>Bitte selbst mitbringen:</b> Bettwäsche, Abtrocknungstuch und Frottiertücher.</div>
+        <div class="note" style="background:var(--bg-alt)"><b>🎟 Simmental Card inklusive:</b> Gratis Ortsbus und Vergünstigungen für Hallenbad, Boulderhalle, Langlaufpass, Stockhornbahn und mehr.</div>
+      </div>
+      <div class="price-card calc reveal">
+        <h3>Was kostet mein Aufenthalt?</h3>
+        <p class="small" style="margin-top:-6px">Richtwert, Kurtaxe inbegriffen.</p>
+        <div class="row">
+          <div><label for="cN">Nächte</label><input id="cN" type="number" min="1" max="60" value="7"></div>
+          <div><label for="cA">Erwachsene</label><input id="cA" type="number" min="1" max="6" value="4"></div>
+          <div><label for="cK">Kinder</label><input id="cK" type="number" min="0" max="5" value="0"></div>
+        </div>
+        <table class="tbl">
+          <tr><td id="lMiete">Miete</td><td id="vMiete"></td></tr>
+          <tr><td id="lKurA">Kurtaxe Erwachsene</td><td id="vKurA"></td></tr>
+          <tr><td id="lKurK">Kurtaxe Kinder</td><td id="vKurK"></td></tr>
+        </table>
+        <div class="total"><span>Total</span><b id="vTot"></b></div>
+        <p class="small" id="cWarn" style="color:var(--warn-ink);min-height:1.2em"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="verfuegbarkeit" class="alt">
+  <div class="wrap">
+    <div class="eyebrow">Buchen</div>
+    <h2>Verfügbarkeit prüfen</h2>
+    <p class="lead">Die Online-Abfrage ist noch in Arbeit. Bis dahin meldet euch direkt bei Andreas, per Telefon oder Mail.</p>
+    <form class="avail reveal" onsubmit="return false" aria-describedby="availNote">
+      <span class="soon">Kommt bald</span>
+      <fieldset disabled>
+        <div class="row">
+          <div><label for="aIn">Anreise</label><input id="aIn" type="date"></div>
+          <div><label for="aOut">Abreise</label><input id="aOut" type="date"></div>
+          <div><label for="aG">Personen</label>
+            <select id="aG"><option>1</option><option>2</option><option>3</option><option selected>4</option><option>5</option><option>6</option></select></div>
+          <button class="btn btn-primary" type="submit" disabled>Verfügbarkeit prüfen</button>
+        </div>
+      </fieldset>
+      <p class="small" id="availNote" style="margin:16px 0 0">Anfragen vorerst an <a href="tel:+41796582427">079 658 24 27</a> oder <a href="mailto:buchsandreas@bluewin.ch?subject=Anfrage%20Ferienwohnung%20Lenk">buchsandreas@bluewin.ch</a>.</p>
+    </form>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Gut zu wissen</div>
+    <h2>Spielregeln</h2>
+    <div class="grid3">
+      <div class="card reveal"><div class="ic">🚭</div><h3>Rauchfrei</h3><p>Im ganzen Haus ist Rauchen verboten. Vorsicht mit offenem Feuer.</p></div>
+      <div class="card reveal"><div class="ic">🧹</div><h3>Selbst reinigen</h3><p>Ihr hinterlasst die Wohnung so, wie ihr sie angetroffen habt. Dafür keine Reinigungsgebühr.</p></div>
+      <div class="card reveal"><div class="ic">🪵</div><h3>Holz</h3><p>Holz zum Kochen ist inklusive. Fürs Heizen und das Cheminée freuen wir uns über einen Batzen in die Kasse.</p></div>
+    </div>
+    <p class="small" style="margin-top:20px">Alle Details vor Ort stehen im <a href="anleitung.html">Gäste-Handbuch</a>.</p>
+  </div>
+</section>
+</main>
+
+<script src="assets/js/site.js"></script>
+<script>
+const chf=n=>'CHF '+(Number.isInteger(n)?n+'.–':n.toFixed(2));
+function calc(){
+  const n=Math.max(1,+cN.value||1),a=Math.max(0,+cA.value||0),k=Math.max(0,+cK.value||0);
+  const weeks=Math.floor(n/7),rest=n%7,miete=weeks*500+rest*75,kA=a*n*6,kK=k*n*2.5;
+  lMiete.textContent=weeks?`Miete (${weeks}× Woche${rest?` + ${rest} Nacht${rest>1?'e':''}`:''})`:`Miete (${n} Nacht${n>1?'e':''} × 75.–)`;
+  vMiete.textContent=chf(miete);
+  lKurA.textContent=`Kurtaxe ${a} Erw. × ${n} N.`;vKurA.textContent=chf(kA);
+  lKurK.textContent=`Kurtaxe ${k} Kind${k===1?'':'er'} × ${n} N.`;vKurK.textContent=chf(kK);
+  vTot.textContent=chf(miete+kA+kK);
+  cWarn.textContent=a+k>6?'Die Wohnung bietet Platz für maximal 6 Personen.':'';
+}
+['cN','cA','cK'].forEach(id=>document.getElementById(id).addEventListener('input',calc));calc();
+</script>
+</body>
+</html>

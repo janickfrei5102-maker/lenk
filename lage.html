@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lage &amp; Ausflüge · Ferienwohnung Lenk</title>
+<meta name="description" content="Oberried, Lenk im Simmental: Langlaufloipe hinter dem Haus, Metschbahn in 2 Minuten, Betelberg in unter 10 Minuten.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><path d='M4 56 24 20l10 16 8-12 18 32Z' fill='%232f5d3a'/><path d='m24 20 6 10-6-2-6 4Z' fill='%23fff'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+.dist{margin-top:28px}
+.dist svg{width:100%;height:auto}
+[data-season]{display:none}
+.show-sommer [data-season="sommer"],.show-winter [data-season="winter"]{display:grid}
+</style>
+</head>
+<body data-page="lage">
+
+<header class="banner">
+  <img src="assets/img/hero.jpg" alt="Blick vom Haus auf die Berge" style="object-position:60% 35%">
+  <div class="wrap">
+    <div class="eyebrow">Lage &amp; Ausflüge</div>
+    <h1>Direkt ab Haustür los</h1>
+    <p>Lenk ist ein idealer Ort für Wintersport, Wandern, Biken und Gleitschirmfliegen.</p>
+  </div>
+</header>
+
+<main>
+<section>
+  <div class="wrap split">
+    <div class="reveal">
+      <div class="eyebrow">Aktivitäten</div>
+      <h2>Sommer oder Winter?</h2>
+      <div class="season" role="group" aria-label="Jahreszeit">
+        <button type="button" data-s="winter" aria-pressed="true">❄️ Winter</button>
+        <button type="button" data-s="sommer" aria-pressed="false">☀️ Sommer</button>
+      </div>
+      <div id="acts" class="show-winter">
+        <div class="act" data-season="winter">
+          <div><b>⛷ Ski &amp; Snowboard</b><span>Metschbahn und Betelberg führen in zwei Skigebiete.</span></div>
+          <div><b>🎿 Langlauf</b><span>Die Loipe führt gleich hinter dem Haus durch.</span></div>
+          <div><b>🥾 Winterwandern</b><span>Der Winterwanderweg startet hinter dem Haus.</span></div>
+          <div><b>🛷 Schlitteln</b><span>Auf dem Betelberg gibt es eine Schlittelpiste bis ins Tal.</span></div>
+        </div>
+        <div class="act" data-season="sommer">
+          <div><b>🥾 Wandern</b><span>Direkt ab Haus oder mit einer der beiden Bergbahnen.</span></div>
+          <div><b>🚵 Biken</b><span>Bikes haben Platz im alten Stall.</span></div>
+          <div><b>🪂 Gleitschirm</b><span>Lenk ist ein beliebter Startort.</span></div>
+          <div><b>🏊 Hallenbad &amp; Boulder</b><span>Vergünstigt mit der Simmental Card.</span></div>
+        </div>
+      </div>
+      <p class="small" style="margin-top:18px">Im Haus liegen Tourenvorschläge und Prospekte zu allen Aktivitäten bereit.</p>
+    </div>
+    <div class="photo reveal" id="seasonPhoto" data-zoom><img src="assets/img/parkplatz-winter.jpg" alt="Haus im Winter"></div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="eyebrow">Wege</div>
+    <h2>So nah ist alles</h2>
+    <div class="dist card reveal">
+      <svg viewBox="0 0 900 200" role="img" aria-label="Distanzen ab dem Haus">
+        <path d="M0 150 C120 140 200 70 300 90 S480 30 560 60 S760 20 900 50 V200 H0Z" fill="var(--green-soft)"/>
+        <path d="M40 160 H860" stroke="var(--line)" stroke-width="6" stroke-linecap="round"/>
+        <path d="M40 160 H860" stroke="var(--glow)" stroke-width="3" stroke-dasharray="6 10" stroke-linecap="round">
+          <animate attributeName="stroke-dashoffset" from="0" to="-32" dur="1.2s" repeatCount="indefinite"/>
+        </path>
+        <g transform="translate(40 160)"><circle r="16" fill="var(--green)"/><path d="M-8 3 0-6 8 3v6h-16Z" fill="#fff"/></g>
+        <text x="40" y="195" text-anchor="middle" class="t" style="font:600 13px Inter;fill:var(--ink)">Haus</text>
+        <g transform="translate(190 160)"><circle r="10" fill="var(--card)" stroke="var(--ink)" stroke-width="2.5"/></g>
+        <text x="190" y="130" text-anchor="middle" style="font:600 13px Inter;fill:var(--ink)">🚌 Bus «Lenk, Litte»</text>
+        <text x="190" y="195" text-anchor="middle" style="font:500 12px Inter;fill:var(--muted)">2 Min. zu Fuss</text>
+        <g transform="translate(420 160)"><circle r="10" fill="var(--card)" stroke="var(--ink)" stroke-width="2.5"/></g>
+        <text x="420" y="130" text-anchor="middle" style="font:600 13px Inter;fill:var(--ink)">🚡 Metschbahn</text>
+        <text x="420" y="195" text-anchor="middle" style="font:500 12px Inter;fill:var(--muted)">2 Min. Auto/ÖV</text>
+        <g transform="translate(560 160)"><circle r="10" fill="var(--card)" stroke="var(--ink)" stroke-width="2.5"/></g>
+        <text x="560" y="105" text-anchor="middle" style="font:600 13px Inter;fill:var(--ink)">♻️ Container</text>
+        <text x="560" y="195" text-anchor="middle" style="font:500 12px Inter;fill:var(--muted)">100 m Richtung Dorf</text>
+        <g transform="translate(820 160)"><circle r="10" fill="var(--card)" stroke="var(--ink)" stroke-width="2.5"/></g>
+        <text x="820" y="80" text-anchor="middle" style="font:600 13px Inter;fill:var(--ink)">🚠 Betelberg</text>
+        <text x="820" y="195" text-anchor="middle" style="font:500 12px Inter;fill:var(--muted)">&lt; 10 Min.</text>
+      </svg>
+      <p class="small" style="margin:8px 0 0">Schematisch, nicht massstabsgetreu.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap split">
+    <div class="reveal">
+      <div class="eyebrow">Anreise</div>
+      <h2>Oberriedstrasse 43</h2>
+      <p class="lead">3775 Lenk im Simmental. Bei jedem Wetter mit Auto und ÖV gut erreichbar.</p>
+      <div class="act">
+        <div><b>🚆 Mit dem ÖV</b><span>Bis Lenk i. S., dann Bus bis «Lenk, Litte». Von dort 2 Minuten zu Fuss.</span></div>
+        <div><b>🚗 Mit dem Auto</b><span>2 Parkplätze auf dem Kiesplatz direkt vor dem Haus.</span></div>
+      </div>
+      <p style="margin-top:22px"><a class="btn btn-soft" href="https://www.google.com/maps/search/?api=1&query=Oberriedstrasse+43%2C+3775+Lenk" target="_blank" rel="noopener">In Google Maps öffnen ↗</a></p>
+      <p class="small">Wo genau parkiert wird, steht im <a href="anleitung.html#parkieren">Gäste-Handbuch</a>.</p>
+    </div>
+    <div class="photo reveal" data-zoom><img src="assets/img/lageplan.jpg" alt="Luftbild mit Haus und Umgebung" loading="lazy"></div>
+  </div>
+</section>
+</main>
+
+<script src="assets/js/site.js"></script>
+<script>
+const acts=document.getElementById('acts'),ph=document.querySelector('#seasonPhoto img');
+document.querySelectorAll('.season button').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('.season button').forEach(x=>x.setAttribute('aria-pressed',x===b));
+  acts.className='show-'+b.dataset.s;
+  ph.src=b.dataset.s==='winter'?'assets/img/parkplatz-winter.jpg':'assets/img/parkplatz-sommer.jpg';
+  ph.alt=b.dataset.s==='winter'?'Haus im Winter':'Haus im Sommer';
+});
+</script>
+</body>
+</html>

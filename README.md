@@ -1,15 +1,21 @@
 # Ferienwohnung Lenk
 
-Statische Webseite für die Ferienwohnung im Oberried, Lenk i. S. (Angebot, Preisrechner, Gäste-Anleitung).
+Statische Webseite für die Ferienwohnung im Oberried, Lenk i. S. Kein Build-Schritt nötig.
+
+| Seite | Inhalt |
+|---|---|
+| `index.html` | Start |
+| `wohnung.html` | Ausstattung, Galerie, Schlafplätze |
+| `preise.html` | Preise, Kostenrechner, Verfügbarkeit (noch deaktiviert) |
+| `lage.html` | Aktivitäten Sommer/Winter, Anreise |
+| `anleitung.html` | Gäste-Handbuch mit Suche, Kategorien, Tags |
+
+## Handbuch bearbeiten
+
+- Texte: `assets/js/guide-data.js` (ein Objekt pro Artikel: Titel, Kategorie, Tags, Suchbegriffe, Inhalt)
+- Zeichnungen: `assets/js/guide-illus.js`
+- Direktlink auf einen Artikel: `anleitung.html#holzherd`
 
 ## Online stellen (GitHub Pages)
 
-1. Repo auf GitHub → **Settings → Pages**
-2. *Source*: „Deploy from a branch“, Branch wählen (z. B. `main`), Ordner `/ (root)` → **Save**
-3. Nach ca. 1 Minute ist die Seite unter `https://<user>.github.io/lenk/` erreichbar.
-
-Lokal ansehen: `index.html` im Browser öffnen.
-
-## Offen
-
-- „Verfügbarkeit prüfen“ ist eingebaut, aber deaktiviert (`#verfuegbarkeit` in `index.html`).
+Settings → Pages → „Deploy from a branch“ → `master` / `(root)`.
